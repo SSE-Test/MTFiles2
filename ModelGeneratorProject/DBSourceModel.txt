@@ -1,0 +1,88 @@
+{
+  "model_generators": [
+    {
+      "find": "methods",
+      "where": [
+        {
+          "constraint": "any_of",
+          "inners": [
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/content/Intent;\\.getExtras:\\(\\)Landroid/os/Bundle;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/location/Location;\\.getLatitude:\\(\\)D;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/location/Location;\\.getLongitude:\\(\\)D;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/location/LocationManager;\\.getLastKnownLocation:\\(Ljava/lang/String;\\)Landroid/location/Location;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/os/Bundle;\\.get:\\(Ljava/lang/String;\\)Ljava/lang/Object;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/telephony/TelephonyManager;\\.getDeviceId:\\(\\)Ljava/lang/String;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/telephony/TelephonyManager;\\.getSimSerialNumber:\\(\\)Ljava/lang/String;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/telephony/TelephonyManager;\\.getSubscriberId:\\(\\)Ljava/lang/String;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/widget/EditText;\\.getText:\\(\\)Landroid/text/Editable;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lde/ecspride/PrivateDataLeak2;\\.findViewById:\\(I;\\)Landroid/view/View;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lde/ecspride/PrivateDateLeakage;\\.findViewById:\\(I;\\)Landroid/view/View;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ledu/wayne/cs/ParentClass;\\.source:\\(Landroid/content/Context;\\)Ljava/lang/String;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/lang/reflect/Method;\\.invoke:\\(Ljava/lang/Object;\\[Ljava/lang/Object;\\)Ljava/lang/Object;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lmod/ndk/ActMain;\\.cFuncDoTheMagic:\\(Landroid/content/Context;\\)Z;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lmod/ndk/ActMain;\\.cFuncGetIMEI:\\(Landroid/content/Context;\\)Ljava/lang/String;"
+   }
+				],
+      	     }
+      ],
+      "model": {
+        "for_all_parameters": [
+          {
+            "variable": "x",
+            "where": [],
+            "sources": [
+              {
+                "kind": "DBSourceModel",
+                "port": "Argument(x)"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

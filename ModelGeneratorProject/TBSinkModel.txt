@@ -1,0 +1,196 @@
+{
+  "model_generators": [
+    {
+      "find": "methods",
+      "where": [
+        {
+          "constraint": "any_of",
+          "inners": [
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/content/ContentValues;\\.put:\\(Ljava/lang/String;Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/content/Context;\\.startService:\\(Landroid/content/Intent;\\)Landroid/content/ComponentName;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/content/Context;\\.startActivity:\\(Landroid/content/Intent;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/content/SharedPreferences$Editor;\\.commit:\\(\\)Z;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/database/sqlite/SQLiteDatabase;\\.update:\\(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;\\[Ljava/lang/String;\\)I;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/database/sqlite/SQLiteDatabase;\\.insert:\\(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;\\)J;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/telephony/SmsManager;\\.sendTextMessage:\\(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/telephony/gsm/SmsManager;\\.sendMultipartTextMessage:\\(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/telephony/gsm/SmsManager;\\.sendTextMessage:\\(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/util/Log;\\.i:\\(Ljava/lang/String;Ljava/lang/String;\\)I;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/webkit/WebView;\\.addJavascriptInterface:\\(Ljava/lang/Object;Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lcom/android/tools/system/MyPostRequest;\\.execute:\\(\\[Ljava/lang/Object;\\)Landroid/os/AsyncTask;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lcom/baidu/inf/iis/bcs/BaiduBCS;\\.putObject:\\(Lcom/baidu/inf/iis/bcs/request/PutObjectRequest;\\)Lcom/baidu/inf/iis/bcs/response/BaiduBCSResponse;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lcom/example/service/InstallService;\\.startActivity:\\(Landroid/content/Intent;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lcom/movieshow/down/Badaccents;\\.startActivity:\\(Landroid/content/Intent;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lexts/whats/activities/Cards;\\.startService:\\(Landroid/content/Intent;\\)Landroid/content/ComponentName;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/BufferedWriter;\\.write:\\(Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/DataOutputStream;\\.flush:\\(\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/DataOutputStream;\\.write:\\(\\[Lbyte;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/DataOutputStream;\\.write:\\(\\[Lbyte;I;I;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/DataOutputStream;\\.writeBytes:\\(Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/DataOutputStream;\\.writeUTF:\\(Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/File;\\.delete:\\(\\)Z;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/FileWriter;\\.append:\\(Ljava/lang/CharSequence;\\)Ljava/io/Writer;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/FileWriter;\\.write:\\(Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/OutputStream;\\.write:\\(\\[Lbyte;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/OutputStream;\\.write:\\(\\[Lbyte;I;I;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/OutputStreamWriter;\\.write:\\(Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/PrintWriter;\\.append:\\(Ljava/lang/CharSequence;\\)Ljava/io/PrintWriter;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/PrintWriter;\\.println:\\(Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/PrintWriter;\\.write:\\(Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/lang/reflect/Method;\\.invoke:\\(Ljava/lang/Object;\\[Ljava/lang/Object;\\)Ljava/lang/Object;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/net/HttpURLConnection;\\.getInputStream:\\(\\)Ljava/io/InputStream;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/net/HttpURLConnection;\\.getOutputStream:\\(\\)Ljava/io/OutputStream;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/net/HttpURLConnection;\\.connect:\\(\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/net/URLConnection;\\.getInputStream:\\(\\)Ljava/io/InputStream;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/util/concurrent/ThreadPoolExecutor;\\.submit:\\(Ljava/lang/Runnable;\\)Ljava/util/concurrent/Future;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljavax/mail/Transport;\\.sendMessage:\\(Ljavax/mail/Message;\\[Ljavax/mail/Address;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lorg/apache/http/client/HttpClient;\\.execute:\\(Lorg/apache/http/client/methods/HttpUriRequest;\\)Lorg/apache/http/HttpResponse;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lorg/apache/http/impl/client/DefaultHttpClient;\\.execute:\\(Lorg/apache/http/client/methods/HttpUriRequest;\\)Lorg/apache/http/HttpResponse;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lorg/mozilla/javascript/Function;\\.call:\\(Lorg/mozilla/javascript/Context;Lorg/mozilla/javascript/Scriptable;Lorg/mozilla/javascript/Scriptable;\\[Ljava/lang/Object;\\)Ljava/lang/Object;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lorg/springframework/web/client/RestTemplate;\\.exchange:\\(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity;Ljava/lang/Class;\\[Ljava/lang/Object;\\)Lorg/springframework/http/ResponseEntity;"
+   }
+               	     ],
+      	     }
+      ],
+      "model": {
+        "for_all_parameters": [
+          {
+            "variable": "x",
+            "where": [],
+            "sinks": [
+              {
+                "kind": "TBSinkModel",
+                "port": "Argument(x)"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

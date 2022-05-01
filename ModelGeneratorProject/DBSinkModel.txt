@@ -1,0 +1,120 @@
+{
+  "model_generators": [
+    {
+      "find": "methods",
+      "where": [
+        {
+          "constraint": "any_of",
+          "inners": [
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/content/Intent;\\.putExtra:\\(Ljava/lang/String;Ljava/lang/String;\\)Landroid/content/Intent;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/telephony/SmsManager;\\.sendTextMessage:\\(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/telephony/gsm/SmsManager;\\.sendTextMessage:\\(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/util/Log;\\.d:\\(Ljava/lang/String;Ljava/lang/String;\\)I;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/util/Log;\\.e:\\(Ljava/lang/String;Ljava/lang/String;\\)I;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/util/Log;\\.i:\\(Ljava/lang/String;Ljava/lang/String;\\)I;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/util/Log;\\.v:\\(Ljava/lang/String;Ljava/lang/String;\\)I;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Landroid/widget/Toast;\\.makeText:\\(Landroid/content/Context;Ljava/lang/CharSequence;I;\\)Landroid/widget/Toast;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lde/ecspride/IntentSink1;\\.setResult:\\(I;Landroid/content/Intent;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lde/ecspride/IntentSink2;\\.startActivity:\\(Landroid/content/Intent;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ledu/wayne/cs/ParentClass;\\.sink:\\(Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/FileOutputStream;\\.<init>:\\(Ljava/io/File;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/FileOutputStream;\\.write:\\(\\[Lbyte;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/OutputStreamWriter;\\.append:\\(Ljava/lang/CharSequence;\\)Ljava/io/Writer;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/io/OutputStreamWriter;\\.<init>:\\(Ljava/io/OutputStream;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/lang/ProcessBuilder;\\.start:\\(\\)Ljava/lang/Process;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/lang/ProcessBuilder;\\.command:\\(\\[Ljava/lang/String;\\)Ljava/lang/ProcessBuilder;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/net/HttpURLConnection;\\.connect:\\(\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/net/URL;\\.openConnection:\\(\\)Ljava/net/URLConnection;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Ljava/net/URL;\\.<init>:\\(Ljava/lang/String;\\)V;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lmod/ndk/ActMain;\\.cFuncDoTheMagic:\\(Landroid/content/Context;\\)Z;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lmod/ndk/ActMain;\\.cFuncSendSMS:\\(Ljava/lang/String;\\)Z;"
+   },
+   {
+    "constraint": "signature",
+    "pattern": "Lmod/ndk/ActMain;\\.cFuncSendData:\\(Ljava/lang/String;\\)Ljava/lang/String;"
+   }
+               	     ],
+      	     }
+      ],
+      "model": {
+        "for_all_parameters": [
+          {
+            "variable": "x",
+            "where": [],
+            "sinks": [
+              {
+                "kind": "DBSinkModel",
+                "port": "Argument(x)"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
