@@ -1,0 +1,59 @@
+[
+  {
+    "name": "ActivitySourceGenerator"
+  },
+  {
+    "name": "AndroidBroadcastSourceGenerator"
+  },
+  {
+    "name": "AndroidIntentLaunchSinkGenerator"
+  },
+  {
+    "name": "CodeExecutionSinkGenerator"
+  },
+  {
+    "name": "CommonSanitizers"
+  },
+  {
+    "name": "content_provider_generator"
+  },
+  {
+    "name": "ContextFeature"
+  },
+  {
+    "name": "DataCastFeatureGenerator"
+  },
+  {
+    "name": "ExplicitIntentFeatureGenerator"
+  },
+  {
+    "name": "FileSinkGenerator"
+  },
+  {
+    "name": "ImplicitIntentSourceGenerator"
+  },
+  {
+    "name": "IntentDataFeatureGenerator"
+  },
+  {
+    "name": "service_sources"
+  },
+  {
+    "name": "SQLiteDatabaseSinksGenerator"
+  },
+  {
+    "name": "taint_in_taint_out"
+  },
+  {
+    "name": "taint_in_taint_this"
+  },
+  {
+    "name": "WebViewLoadGenerator"
+  },
+  {
+    "name": "DBSinkModel"
+  },
+  {
+    "name": "DBSourceModel"
+  }
+]
